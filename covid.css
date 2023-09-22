@@ -52,8 +52,7 @@ background-color:#33b5e5;
 padding:0px;
 float:left;
 }
-animation: box 5s alternate infinite;
-}   
+ 
    @keyframes box{
 0%{background:maroon;}
 20%{background:lime;}
@@ -61,7 +60,7 @@ animation: box 5s alternate infinite;
 70%{background:orange;}
 100%{background:teal;}
 }
-}
+
 .icon-box{
 width:50px;
 height:50px;
@@ -81,12 +80,12 @@ width:100%;
 padding:30px 30px;
 margin:30px 30px;
 text-align:center;
-border-spacing=o;
-table-align:center;
+border-spacing:o;
+table-layout:center;
 }
 tr:first-child{
 background-color:#9933cc;
-text-color:white;
+color:white;
 text-transform:uppercase;
 position:webkit-sticky;
 position:relative;
