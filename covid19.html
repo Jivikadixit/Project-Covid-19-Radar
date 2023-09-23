@@ -65,7 +65,8 @@ const recovered=$(".recovered");
 const deaths=$(".deaths");
 
 var length;
-$.get("https://corsproxy.io/?https://api.covid19india.org/data.json",function(response){
+ // 'https://corsproxy.io/?' + encodeURIComponent('https://api.covid19india.org/data.json');
+$.get('https://corsproxy.io/?' + encodeURIComponent('https://api.covid19india.org/data.json');,function(response){
 var response=response;
 length=response.statewise.length;
 confirmed.html(response.statewise[0].confirmed);
