@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
              <script src="https://kit.fontawesome.com/c4f4b38242.js" crossorigin="anonymous"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="jquery.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
            <link rel="stylesheet" href="covid.css">
 </head>
 <body>
@@ -66,7 +66,7 @@ const deaths=$(".deaths");
 
 var length;
  // 'https://corsproxy.io/?' + encodeURIComponent('https://api.covid19india.org/data.json');
-$.get('https://corsproxy.io/?' + encodeURIComponent('https://api.covid19india.org/data.json');,function(response){
+$.get("https://data.covid19india.org/data.json",function(response){
 var response=response;
 length=response.statewise.length;
 confirmed.html(response.statewise[0].confirmed);
